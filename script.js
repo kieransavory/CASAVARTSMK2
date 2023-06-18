@@ -46,3 +46,20 @@ function navClickHandler() {
     buttonText.classList.toggle('active')
 
 }
+
+
+
+function homeScroll() {
+    const heroPos = heroSection.offsetTop;
+    window.scrollTo(0, heroPos);
+}
+
+function aboutScroll() {
+    const aboutPos = aboutSection.offsetTop
+    window.scrollTo(0, aboutPos)
+}
+
+function tattooScroll() {
+    const tattooPos = tattooSection.offsetTop
+    window.scrollTo(0,tattooPos)
+}

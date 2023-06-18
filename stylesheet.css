@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 *::selection{
@@ -133,6 +134,17 @@
     text-decoration: line-through;
 }
 
+.navmenu a{
+    position: absolute;
+    bottom: 0;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: .75rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .5;
+}
+
 /* HERO PAGE DESKTOP STYLING */
 
 .hero{
@@ -243,8 +255,10 @@
 }
 
 .tattoosection{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     background-color: whitesmoke;
 }
+
+
 
