@@ -1,21 +1,38 @@
 function scrollCheck(){
 
+
     let currentPos = window.scrollY;
     const heroSection = document.getElementById('heroSection');
     const heroPos = heroSection.offsetTop
+
     const aboutSection = document.getElementById('aboutSection')
     const aboutPos = aboutSection.offsetTop
 
-    if (currentPos === heroPos) {
+    const tattooSection = document.getElementById('tattooSection');
+    const tattooPos = tattooSection.offsetTop
+
+    if (currentPos <= heroPos) {
         document.getElementById('homenav').style.opacity = "1"
     } else document.getElementById('homenav').style.opacity = "0.5"
 
-    if (currentPos === aboutPos) {
-        document.getElementById('aboutnav').style.opacity = "1"
-    } else document.getElementById('aboutnav').style.opacity = "0.5"
+    if (currentPos >= aboutPos && currentPos < tattooPos) {
+        document.getElementById('aboutnav').style.opacity = "1";
+    } else if (currentPos === tattooPos) {
+        document.getElementById('aboutnav').style.opacity = "0.5";
+    } else if (currentPos > heroPos < aboutPos) {
+        document.getElementById('aboutnav').style.opacity = "0.5";
+    }
+
+    if (currentPos === tattooPos) {
+        document.getElementById('tattoonav').style.opacity = "1";
+    } else document.getElementById('tattoonav').style.opacity = "0.5";
 
 
-    console.log(currentPos, heroPos);
+
+
+    console.log(
+       currentPos, tattooPos
+    );
 }
 
 function navClickHandler() {

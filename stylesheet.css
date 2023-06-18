@@ -194,8 +194,7 @@
 .abouttext h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 5rem;
-    letter-spacing: 2rem;
+    font-size: 4rem;
     margin: 1rem;
 }
 
@@ -217,3 +216,35 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.tattoosparallax{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: column;
+    background-image: url(https://www.zastavki.com/pictures/1920x1080/2014/_The_guy_doing_the_tattoo_091138_23.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.tattoosparallax h2{
+    font-size: 4rem;
+}
+
+.tattoosparallax p{
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+}
+
+.tattoosection{
+    height: 80vh;
+    display: flex;
+    background-color: whitesmoke;
+}
+
