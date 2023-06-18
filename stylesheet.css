@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::selection{
+    color: pink;
+    background-color: black;
+}
+
+
+
+/* SCROLLBAR STYLING */
+
+
+::-webkit-scrollbar {
+    width: .75rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #cecece;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #3f3f3f;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222222;
+  }
+
+
+
+/* MENU BUTTON DESKTOP STYLING */
+
+.menuopen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    position: fixed;
+    top: 0;
+    right: 0vw;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .5rem;
+    margin-top: 1rem;
+    border-radius: 1rem 0 0 1rem;
+    cursor: pointer;
+}
+
+.menuopen.active{
+    transition: all .5s;
+    position: fixed;
+    top: 0;
+    right: 25vw;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .5rem;
+    margin-top: 1rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.buttonspan{
+    transition: all .5s;
+    opacity: .5;
+    font-weight: bold;
+}
+.buttonspan:hover{
+    transition: all .5s;
+    opacity: 1;
+}
+.buttonspan.active{
+    position: relative;
+    transform: rotate(45deg);
+    transition: all .5s
+}
+
+/* NAVMENU DESKTOP STYLING */
+
+.navmenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -25vw;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.navmenu.active{
+    transition: all .5s;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navmenu ul li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 3rem;
+    text-align: center;
+    opacity: .5;
+    font-weight: 100;
+}
+
+.navmenu ul li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    text-decoration: line-through;
+}
+
+/* HERO PAGE DESKTOP STYLING */
+
+.hero{
+    display: flex;
+    height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp4720092.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    user-select: none;
+}
+
+.herotext{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 5rem;
+    text-align: center;
+}
+
+.herotext h1{
+    color: white;
+    font-size: 10rem;
+    font-weight: 100;
+    transform: scale(1,1.1);
+}
+
+.herotext span{
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+.herotext p{
+    letter-spacing: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.aboutme{
+    display: flex;
+    height: 100vh;
+}
+
+.abouttext{
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(45deg, rgb(56, 56, 56), rgb(77, 77, 77));
+    color: whitesmoke;
+}
+
+.abouttext h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    letter-spacing: 2rem;
+    margin: 1rem;
+}
+
+.abouttext p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1rem;
+}
+
+.aboutimage{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    background-color: grey;
+    background-image: url(https://wallpapers.com/images/featured/4pl1ebbc1dltzvw4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
