@@ -81,7 +81,7 @@
 }
 .buttonspan.active{
     position: relative;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     transition: all .5s
 }
 
