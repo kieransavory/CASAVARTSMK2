@@ -286,6 +286,7 @@
     .navmenu ul li{
         font-size: 1.25rem;
         margin: 1rem;
+        font-weight: bold;
     }
 
     .navmenu a{
@@ -307,6 +308,13 @@
     .herotext h1{
         font-size: 4rem;
         font-weight: bold;
+    }
+
+    .hero span{
+        -webkit-text-stroke: initial;
+        color: red;
+        mix-blend-mode: difference;
+        font-style: italic;
     }
 
     .herotext p{
