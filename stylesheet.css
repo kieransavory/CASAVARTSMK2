@@ -71,7 +71,7 @@
 }
 
 .buttonspan{
-    transition: all .5s;
+    transition: all 1s;
     opacity: .5;
     font-weight: bold;
 }
@@ -82,7 +82,7 @@
 .buttonspan.active{
     position: relative;
     transform: rotate(-45deg);
-    transition: all .5s
+    transition: all 1s
 }
 
 /* NAVMENU DESKTOP STYLING */
@@ -208,6 +208,8 @@
     font-weight: bold;
     font-size: 4rem;
     margin: 1rem;
+    border: .5rem solid white;
+    padding: .5rem;
 }
 
 .abouttext p{
@@ -246,6 +248,8 @@
 
 .tattoosparallax h2{
     font-size: 4rem;
+    border: .5rem solid white;
+    padding: .5rem;
 }
 
 .tattoosparallax p{
@@ -255,10 +259,118 @@
 }
 
 .tattoosection{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     background-color: whitesmoke;
 }
 
+
+@media only screen and (max-width: 450px) {
+
+    .navmenu.active {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .menuopen {
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 5vh;
+        top: initial;
+    }
+
+    .menuopen.active{
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 5vh;
+        top: initial;
+    }
+
+    .navmenu ul li{
+        font-size: 1.25rem;
+        margin: 1rem;
+    }
+
+    .navmenu a{
+        text-align: center;
+    }
+
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .herotext{
+        margin: 0;
+        position: relative;
+    }
+
+    .herotext h1{
+        font-size: 4rem;
+    }
+
+    .herotext p{
+        font-size: 1rem;
+        letter-spacing: .5rem;
+        font-weight: 100;
+    }
+
+    
+
+    .aboutme{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    .abouttext{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 80vh;
+        background-image: linear-gradient(black, rgb(31, 31, 31));
+        background-attachment: fixed;
+        background-position: center;
+
+    }
+
+    .aboutimage {
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .abouttext h2{
+        font-size: 2.5rem;
+        border: 1vw solid white;
+        padding: 1vw;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    .abouttext p{
+        font-size: 4vw;
+        line-height: 1;
+        width: 90%;
+        font-weight: bold;
+    }
+
+    
+
+    .tattoosparallax h2{
+        font-size: 2.5rem;
+        border: 1vw solid white;
+        padding: 1vw;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .tattoosparallax p{
+        letter-spacing: 1vw;
+        margin-top: 3vw;
+    }
+
+
+}
 
 

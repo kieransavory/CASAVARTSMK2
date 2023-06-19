@@ -52,14 +52,23 @@ function navClickHandler() {
 function homeScroll() {
     const heroPos = heroSection.offsetTop;
     window.scrollTo(0, heroPos);
+    document.getElementById('navbar').classList.toggle('active');
+    document.getElementById('navbarbutton').classList.toggle('active');
+    document.getElementById('buttonspan').classList.toggle('active');
 }
 
 function aboutScroll() {
     const aboutPos = aboutSection.offsetTop
     window.scrollTo(0, aboutPos)
+    document.getElementById('navbar').classList.toggle('active');
+    document.getElementById('navbarbutton').classList.toggle('active');
+    document.getElementById('buttonspan').classList.toggle('active');
 }
 
 function tattooScroll() {
     const tattooPos = tattooSection.offsetTop
     window.scrollTo(0,tattooPos)
+    document.getElementById('navbar').classList.toggle('active');
+    document.getElementById('navbarbutton').classList.toggle('active');
+    document.getElementById('buttonspan').classList.toggle('active');
 }
