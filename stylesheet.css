@@ -267,6 +267,10 @@
 
 @media only screen and (max-width: 450px) {
 
+    .hero {
+        background-attachment: initial;
+    }
+
     .navmenu.active {
         background-color: rgba(0, 0, 0, 0.8);
     }
@@ -355,7 +359,9 @@
         font-weight: bold;
     }
 
-    
+    .tattoosparallax{
+        background-attachment: initial;
+    }
 
     .tattoosparallax h2{
         font-size: 2.5rem;
