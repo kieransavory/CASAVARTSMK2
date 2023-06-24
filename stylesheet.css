@@ -460,6 +460,7 @@
 .faq{
     display: flex;
     height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .faqimage{
@@ -482,12 +483,41 @@
 }
 
 .faqtablecontainer{
+    height: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 50%;
+    outline: 1px solid red;
 }
+
+.faqtable{
+    width: 90%;
+    height: 100%;
+    outline: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question{
+    width: 90%;
+}
+
+.answer{
+    height: 0%;
+    overflow: hidden;
+}
+
+.answer.active{
+    height: auto;
+    overflow: auto;
+    width: 90%;
+}
+
+
+
 
 
 

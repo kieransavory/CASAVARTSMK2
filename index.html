@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>// CASAVARTS</title>
-        <meta name="description" content="">
+        <meta name="description" content="CASAVARTS - UK based Tattoo artist specialising in blackwork tattoos, and mixed media art in a variety of forms.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="shortcut icon" href="casavartsfavicon.png" type="image/x-icon">
     </head>
-    <body onscroll="scrollCheck()">
+    <body onload="faqLogic()" onscroll="scrollCheck()">
 
         <!-- NAVIGATION BAR MARKUP -->
 
         <nav id="navbar" class="navmenu">
-            <button title="Navigation Menu" id="navbarbutton" onclick="navClickHandler()" class="menuopen"><span class="buttonspan" id="buttonspan">+</span></button>
+            <button tabindex="0" aria-label="Navigation Button" title="Navigation Menu" id="navbarbutton" onclick="navClickHandler()" class="menuopen"><span class="buttonspan" id="buttonspan">+</span></button>
             <ul>
-                <li onclick="homeScroll()" title="HOME" style="opacity: 1" id="homenav">HOME</li>
-                <li onclick="aboutScroll()" title="ABOUT" id="aboutnav">ABOUT</li>
-                <li onclick="tattooScroll()" title="TATTOOS" id="tattoonav">TATTOOS</li>
-                <li onclick="artScroll()" title="ART">ART</li>
-                <li onclick="faqScroll()" title="FAQ">FAQ</li>
-                <li title="CONTACT">CONTACT</li>
+                <li tabindex="0" aria-label="Home" onclick="homeScroll()" title="HOME" style="opacity: 1" id="homenav">HOME</li>
+                <li tabindex="0" aria-label="About" onclick="aboutScroll()" title="ABOUT" id="aboutnav">ABOUT</li>
+                <li tabindex="0" aria-label="Tattoos" onclick="tattooScroll()" title="TATTOOS" id="tattoonav">TATTOOS</li>
+                <li tabindex="0" aria-label="Art" onclick="artScroll()" title="ART">ART</li>
+                <li tabindex="0" aria-label="Frequently Asked Questions" onclick="faqScroll()" title="FAQ">FAQ</li>
+                <li tabindex="0" aria-label="Contact" title="CONTACT">CONTACT</li>
             </ul>
             <a target="_blank" href="consentform.html">CONSENT FORM</a>
         </nav>
@@ -123,13 +123,36 @@
         <!-- FAQ MARKUP -->
 
         <section id="faq" class="faq">
+
             <div class="faqimage">
                 <h2>FAQ</h2>
             </div>
 
-            <div class="faqtablecontainer"></div>
+        <!-- <div class="faqtablecontainer">
 
-        </section>
+                <div class="faqtable">
+
+                    <div id="question1" class="question">
+                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ratione explicabo assumenda eius libero exercitationem?</h3>
+                    </div>
+
+                    <div id="answer1" class="answer">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dignissimos praesentium velit in? Hic eveniet a repudiandae eaque quam provident!</p>
+                    </div>
+
+                    <div id="question2" class="question">
+                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ratione explicabo assumenda eius libero exercitationem?</h3>
+                    </div>
+
+                    <div id="answer2" class="answer">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dignissimos praesentium velit in? Hic eveniet a repudiandae eaque quam provident!</p>
+                    </div>
+
+                </div>
+
+        </div>
+
+        </section> -->
 
 
        

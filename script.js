@@ -120,6 +120,13 @@ function faqScroll() {
 }
 
 
+function faqLogic() {
+    const q1 = document.getElementById('question1');
+    q1.addEventListener('click', () => {
+        answer1.classList.toggle('active');
+    })
+}
+
 
 
 
