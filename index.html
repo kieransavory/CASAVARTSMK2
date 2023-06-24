@@ -12,19 +12,23 @@
     </head>
     <body onscroll="scrollCheck()">
 
+        <!-- NAVIGATION BAR MARKUP -->
+
         <nav id="navbar" class="navmenu">
             <button title="Navigation Menu" id="navbarbutton" onclick="navClickHandler()" class="menuopen"><span class="buttonspan" id="buttonspan">+</span></button>
             <ul>
                 <li onclick="homeScroll()" title="HOME" style="opacity: 1" id="homenav">HOME</li>
                 <li onclick="aboutScroll()" title="ABOUT" id="aboutnav">ABOUT</li>
                 <li onclick="tattooScroll()" title="TATTOOS" id="tattoonav">TATTOOS</li>
-                <li title="ART">ART</li>
-                <li title="FAQ">FAQ</li>
+                <li onclick="artScroll()" title="ART">ART</li>
+                <li onclick="faqScroll()" title="FAQ">FAQ</li>
                 <li title="CONTACT">CONTACT</li>
             </ul>
             <a target="_blank" href="consentform.html">CONSENT FORM</a>
         </nav>
         
+
+        <!-- HERO SECTION MARKUP -->
 
         <section id="heroSection" class="hero">
             <div class="herotext">
@@ -32,9 +36,12 @@
                 <p>TATTOOIST // ARTIST</p>
             </div>
         </section>
+
+        <!-- ABOUT SECTION MARKUP -->
         
         <section id="aboutSection" class="aboutme">
             <section class="abouttext">
+                <div class="abouttextcontent" id="aboutText">
                 <h2>ABOUT</h2>
                 <p>Recognised as Casavarts, or Chloe Savory, I am a self taught artist from the UK, 
                     exploring the realms within various paint, pencil and ink mediums.
@@ -51,6 +58,7 @@
                     studio, located in Cheltenham.
                 </p>
             </section>
+            </div>
             <div class="aboutimage"></div>
         </section>
 
@@ -59,8 +67,69 @@
             <p>// MY WORK</p>
         </section>
 
-        <section class="tattoosection"></section>
+        <!-- TATTOO SECTION MARKUP -->
 
+        <section class="tattoosection">
+            <div id="tattooContainer" class="tattoocontainer">
+                <img loading="lazy" class="tattooimage" src="appletattoo.jpg" />
+                <img loading="lazy"  class="tattooimage" src="branchman.jpg" />
+                <img loading="lazy"  class="tattooimage" src="fishtattoo.jpg" />
+                <img loading="lazy"  class="tattooimage" src="lavalamp.jpg" />
+                <img loading="lazy"  class="tattooimage" src="leaftattoo.jpg" />
+                <img loading="lazy"  class="tattooimage" src="neckpiece.jpg" />
+                <img loading="lazy"  class="tattooimage" src="onitattoo.jpg" />
+                <img loading="lazy"  class="tattooimage" src="scales.jpg" />
+            </div>
+        </section>
+
+        <!-- ART SECTION MARKUP -->
+
+         <section id="artSection" class="aboutart">
+            <section class="arttext">
+                <div class="arttextcontent" id="artText">
+                <h2>MY ART</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cupiditate ut itaque omnis neque dolore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur necessitatibus voluptatem nobis nulla atque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam facere sint ex quis omnis. Nesciunt!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cupiditate ut itaque omnis neque dolore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur necessitatibus voluptatem nobis nulla atque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam facere sint ex quis omnis. Nesciunt!
+                </p>
+            </section>
+            </div>
+            <div class="artbgimage"></div>
+        </section>
+
+        <section id="artParallax" class="artparallax">
+            <h2>CASAVARTS</h2>
+            <p>// ART PIECES</p>
+        </section>
+
+        <section class="artsection">
+            <div id="artContainer" class="artcontainer">
+                <img loading="lazy" class="artimage" src="artbg.jpg" />
+                <img loading="lazy"  class="artimage" src="einstein.jpg" />
+                <img loading="lazy"  class="artimage" src="fightclub.jpg" />
+                <img loading="lazy"  class="artimage" src="gandhibg.png" />
+                <img loading="lazy"  class="artimage" src="hendrix.jpg" />
+                <img loading="lazy"  class="artimage" src="loylecarner.jpg" />
+                <img loading="lazy"  class="artimage" src="macmiller.png" />
+                <img loading="lazy"  class="artimage" src="dragon.jpg" />
+            </div>
+        </section>
+
+        <!-- FAQ MARKUP -->
+
+        <section id="faq" class="faq">
+            <div class="faqimage">
+                <h2>FAQ</h2>
+            </div>
+
+            <div class="faqtablecontainer"></div>
+
+        </section>
 
 
        
