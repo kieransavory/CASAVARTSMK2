@@ -41,19 +41,19 @@ function scrollCheck(){
 
     //Check current position and fade About text accordingly
 
-    if (currentPos >= aboutPos) {
+    if (currentPos >= (aboutPos / 1.5)) {
         document.getElementById('aboutText').style.opacity = "1"
     } else document.getElementById('aboutText').style.opacity = "0"
 
     //Check current position and fade tattoo images accordingly
 
-    if (currentPos >= tattooPos) {
+    if (currentPos >= (tattooPos / 1.1)) {
         tattooContainer.style.opacity = "1"
     } else tattooContainer.style.opacity = "0"
 
     //Check current position and fade art text accordingly
 
-    if (currentPos >= artPos) {
+    if (currentPos >= artPos / 1.1) {
         artText.style.opacity = "1"
     } else artText.style.opacity = "0"
 

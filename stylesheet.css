@@ -206,6 +206,7 @@
 }
 
 .abouttextcontent{
+    opacity: 0;
     transition: all .5s;
     display: flex;
     align-items: center;
@@ -458,64 +459,99 @@
 }
 
 .faq{
-    display: flex;
-    height: 100vh;
+    height: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.faqimage{
-    width: 50%;
-    height: 100%;
-    background-image: url(FAQ.jpg);
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.faqimage h2{
-    color: whitesmoke;
-    font-size: 4rem;
-    border: .5rem solid white;
-    background-color: rgba(0, 0, 0, 0.699);
-    padding: .5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.faqtablecontainer{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: 1px solid red;
-}
-
-.faqtable{
-    width: 90%;
-    height: 100%;
-    outline: 1px solid green;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.question{
+
+.faq h2{
+    margin: 1rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    border: .25rem solid white;
+    background-color: transparent;
+    padding: .5rem;
+}
+
+.faqcontainer{
+    text-align: left;
+    user-select: none;
+    margin: 1rem;
+    height: 75%;
     width: 90%;
+    color: whitesmoke;
 }
 
-.answer{
-    height: 0%;
-    overflow: hidden;
+.faqcontainer details span{
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 
-.answer.active{
+.faqcontainer details summary{
+    margin: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    opacity: .75;
+}
+
+.faqcontainer details summary:hover{
+   text-decoration: underline;
+   opacity: 1;
+}
+
+
+.footer{
+    position: relative;
     height: auto;
-    overflow: auto;
-    width: 90%;
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
 }
 
+.footer span{
+    position: absolute;
+    letter-spacing: -1px;
+    font-weight: 100;
+    bottom: 0;
+    opacity: .5;
+}
+
+.socials{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    background-color: black
+}
+
+.socials a{
+    display: flex;
+    align-items: center;
+    margin: 5rem;
+}
+
+.socials a img{
+    opacity: .75;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.socials a img:hover{
+    opacity: 1;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 
 
