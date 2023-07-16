@@ -17,43 +17,67 @@ function scrollCheck(){
     const artContainer = document.getElementById('artContainer')
     const artPos = artSection.offsetTop;
 
+    const faqPos = document.getElementById('faq').offsetTop;
+
     document.body.addEventListener('load', () => {
         currentPos = 0
     })
 
 
-
     //check if current position is less than or equal to position of hero element and set navbar style accordingly.
 
-    if (currentPos <= heroPos) {
+    if (currentPos <= aboutPos) {
         document.getElementById('homenav').style.opacity = "1"
     } else document.getElementById('homenav').style.opacity = "0.5"
 
-    //check if current position is greater than or equal to position of about AND less than tattoos element and set navbar style accordingly.
+    //check current position and make abouut navlink opaque.
 
     if (currentPos >= aboutPos && currentPos < tattooPos) {
         document.getElementById('aboutnav').style.opacity = "1";
-    } else if (currentPos === tattooPos) {
-        document.getElementById('aboutnav').style.opacity = "0.5";
     } else if (currentPos > heroPos < aboutPos) {
         document.getElementById('aboutnav').style.opacity = "0.5";
     }
 
+    //Check current position and make tattoo navlink opaque.
+
+    if (currentPos >= tattooPos && currentPos < artPos) {
+        document.getElementById('tattoonav').style.opacity = "1";
+    } else if (currentPos > tattooPos < artPos) {
+        document.getElementById('tattoonav').style.opacity = "0.5";
+    }
+
+    //Check current position and make art navlink opaque.
+
+    if (currentPos >= artPos && currentPos < faqPos) {
+        document.getElementById('artnav').style.opacity = "1";
+    } else if (currentPos > artPos < faqPos) {
+        document.getElementById('artnav').style.opacity = "0.5";
+    }
+
+    if (currentPos > (faqPos / 1.1)) {
+        document.getElementById('faqnav').style.opacity = "1";
+        document.getElementById('artnav').style.opacity = "0.5";
+    } else if ( currentPos < (faqPos / 1.1)) {
+        document.getElementById('faqnav').style.opacity = "0.5";
+    }
+    
+
+
     //Check current position and fade About text accordingly
 
-    if (currentPos >= (aboutPos / 1.5)) {
+    if (currentPos >= aboutPos) {
         document.getElementById('aboutText').style.opacity = "1"
     } else document.getElementById('aboutText').style.opacity = "0"
 
     //Check current position and fade tattoo images accordingly
 
-    if (currentPos >= (tattooPos / 1.1)) {
+    if (currentPos >= tattooPos) {
         tattooContainer.style.opacity = "1"
     } else tattooContainer.style.opacity = "0"
 
     //Check current position and fade art text accordingly
 
-    if (currentPos >= artPos / 1.1) {
+    if (currentPos >= artPos) {
         artText.style.opacity = "1"
     } else artText.style.opacity = "0"
 
@@ -117,14 +141,6 @@ function faqScroll() {
     document.getElementById('navbar').classList.toggle('active');
     document.getElementById('navbarbutton').classList.toggle('active');
     document.getElementById('buttonspan').classList.toggle('active');
-}
-
-
-function faqLogic() {
-    const q1 = document.getElementById('question1');
-    q1.addEventListener('click', () => {
-        answer1.classList.toggle('active');
-    })
 }
 
 

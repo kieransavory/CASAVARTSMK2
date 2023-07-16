@@ -632,8 +632,6 @@
         width: 100vw;
         height: 80vh;
         background-image: linear-gradient(45deg, rgb(56, 56, 56), rgb(77, 77, 77));
-       
-
     }
 
     .aboutimage {
@@ -673,6 +671,138 @@
     .tattoosparallax p{
         letter-spacing: 1vw;
         margin-top: 3vw;
+    }
+
+    .tattoocontainer {
+        transition: all .5s;
+        width: 90vw;
+        height: 90vh;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .tattoocontainer img{
+        height: 100%;
+        width: 100%;
+        transition: initial;
+        opacity: 1;
+    }
+
+    .tattoocontainer img:hover{
+        transition: none;
+        transform: none;
+        filter: grayscale(1);
+    }
+
+
+    .aboutart{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    .arttext{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 80vh;
+        background-image: linear-gradient(45deg, rgb(56, 56, 56), rgb(77, 77, 77));
+       
+
+    }
+
+    .artbgimage {
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .artcontainer {
+        transition: all .5s;
+        width: 90vw;
+        height: 90vh;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .artcontainer img{
+        height: 100%;
+        width: 100%;
+        transition: initial;
+        opacity: 1;
+    }
+
+    .artcontainer img:hover{
+        transition: none;
+        transform: none;
+        filter: grayscale(1);
+    }
+
+
+
+    .arttextcontent h2{
+        font-size: 2.5rem;
+        border: 1vw solid white;
+        padding: 1vw;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    .arttextcontent p{
+        font-size: 4vw;
+        line-height: 1;
+        width: 90%;
+        font-weight: bold;
+    }
+
+    .artparallax{
+        background-attachment: initial;
+    }
+
+    .artparallax h2{
+        font-size: 2.5rem;
+        border: 1vw solid white;
+        background-color: rgba(0, 0, 0, 0.650);
+        padding: 1vw;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .artparallax p{
+        letter-spacing: 1vw;
+        margin-top: 3vw;
+    }
+
+    .socials a{
+        margin: 1rem;
+    }
+
+    .socials a img{
+        height: 4em;
+        width: 4em;
+        opacity: 1;
+    }
+
+    .socials a img:hover{
+        transform: none;
+    }
+
+    .footer span{
+        display: none;
+    }
+
+    .faqcontainer details summary{
+        color: whitesmoke;
+        font-size: 1.5rem;
+    }
+
+    .faqcontainer details span{
+        font-size: 16px;
     }
 
 
