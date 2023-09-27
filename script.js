@@ -26,13 +26,13 @@ function scrollCheck(){
 
     //check if current position is less than or equal to position of hero element and set navbar style accordingly.
 
-    if (currentPos <= aboutPos) {
+    if (currentPos < (aboutPos / 1.1)) {
         document.getElementById('homenav').style.opacity = "1"
     } else document.getElementById('homenav').style.opacity = "0.5"
 
     //check current position and make abouut navlink opaque.
 
-    if (currentPos >= aboutPos && currentPos < tattooPos) {
+    if (currentPos >= (aboutPos / 1.1) && currentPos < tattooPos) {
         document.getElementById('aboutnav').style.opacity = "1";
     } else if (currentPos > heroPos < aboutPos) {
         document.getElementById('aboutnav').style.opacity = "0.5";
@@ -40,7 +40,7 @@ function scrollCheck(){
 
     //Check current position and make tattoo navlink opaque.
 
-    if (currentPos >= tattooPos && currentPos < artPos) {
+    if (currentPos >= (tattooPos / 1.1) && currentPos < artPos) {
         document.getElementById('tattoonav').style.opacity = "1";
     } else if (currentPos > tattooPos < artPos) {
         document.getElementById('tattoonav').style.opacity = "0.5";
@@ -65,25 +65,25 @@ function scrollCheck(){
 
     //Check current position and fade About text accordingly
 
-    if (currentPos >= aboutPos) {
+    if (currentPos >= (aboutPos / 1.1)) {
         document.getElementById('aboutText').style.opacity = "1"
     } else document.getElementById('aboutText').style.opacity = "0"
 
     //Check current position and fade tattoo images accordingly
 
-    if (currentPos >= tattooPos) {
+    if (currentPos >= (tattooPos / 1.1)) {
         tattooContainer.style.opacity = "1"
     } else tattooContainer.style.opacity = "0"
 
     //Check current position and fade art text accordingly
 
-    if (currentPos >= artPos) {
+    if (currentPos >= (artPos / 1.1)) {
         artText.style.opacity = "1"
     } else artText.style.opacity = "0"
 
     //Check current position and fade art images accordingly
 
-    if (currentPos >= artParallaxPos) {
+    if (currentPos >= (artParallaxPos / 1.1)) {
         artContainer.style.opacity = "1"
     } else artContainer.style.opacity = "0"
 
